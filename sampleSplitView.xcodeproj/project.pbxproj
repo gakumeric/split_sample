@@ -14,6 +14,17 @@
 		24045CB51DD566B700656649 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24045CB31DD566B700656649 /* LaunchScreen.storyboard */; };
 		24045CC01DD566B700656649 /* sampleSplitViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24045CBF1DD566B700656649 /* sampleSplitViewTests.swift */; };
 		24045CCB1DD566B700656649 /* sampleSplitViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24045CCA1DD566B700656649 /* sampleSplitViewUITests.swift */; };
+		24AAE08A1DD5749D00F167C2 /* TestTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AAE0891DD5749D00F167C2 /* TestTabViewController.swift */; };
+		24AAE0921DD613F300F167C2 /* Page1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AAE0911DD613F300F167C2 /* Page1ViewController.swift */; };
+		24AAE0941DD6140400F167C2 /* Page2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AAE0931DD6140400F167C2 /* Page2ViewController.swift */; };
+		24AAE0961DD6142200F167C2 /* Page3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AAE0951DD6142200F167C2 /* Page3ViewController.swift */; };
+		24AAE0981DD614FA00F167C2 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AAE0971DD614FA00F167C2 /* PageViewController.swift */; };
+		24AAE09A1DD6D7AE00F167C2 /* Tab1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AAE0991DD6D7AE00F167C2 /* Tab1ViewController.swift */; };
+		24AAE09C1DD6DA0000F167C2 /* TestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AAE09B1DD6DA0000F167C2 /* TestTableViewController.swift */; };
+		24EA08741DD964FE0055CE53 /* janken.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 24EA08731DD964FE0055CE53 /* janken.jpg */; };
+		24EA087A1DDAAF260055CE53 /* Tab2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EA08791DDAAF260055CE53 /* Tab2ViewController.swift */; };
+		24EA087C1DDAAF340055CE53 /* Tab3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EA087B1DDAAF340055CE53 /* Tab3ViewController.swift */; };
+		24EA087E1DDAB5E10055CE53 /* rainbow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 24EA087D1DDAB5E10055CE53 /* rainbow.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +58,17 @@
 		24045CC61DD566B700656649 /* sampleSplitViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sampleSplitViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		24045CCA1DD566B700656649 /* sampleSplitViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sampleSplitViewUITests.swift; sourceTree = "<group>"; };
 		24045CCC1DD566B700656649 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24AAE0891DD5749D00F167C2 /* TestTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestTabViewController.swift; sourceTree = "<group>"; };
+		24AAE0911DD613F300F167C2 /* Page1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page1ViewController.swift; sourceTree = "<group>"; };
+		24AAE0931DD6140400F167C2 /* Page2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page2ViewController.swift; sourceTree = "<group>"; };
+		24AAE0951DD6142200F167C2 /* Page3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page3ViewController.swift; sourceTree = "<group>"; };
+		24AAE0971DD614FA00F167C2 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		24AAE0991DD6D7AE00F167C2 /* Tab1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab1ViewController.swift; sourceTree = "<group>"; };
+		24AAE09B1DD6DA0000F167C2 /* TestTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestTableViewController.swift; sourceTree = "<group>"; };
+		24EA08731DD964FE0055CE53 /* janken.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = janken.jpg; sourceTree = "<group>"; };
+		24EA08791DDAAF260055CE53 /* Tab2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab2ViewController.swift; sourceTree = "<group>"; };
+		24EA087B1DDAAF340055CE53 /* Tab3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab3ViewController.swift; sourceTree = "<group>"; };
+		24EA087D1DDAB5E10055CE53 /* rainbow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rainbow.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +121,21 @@
 			children = (
 				24045CAA1DD566B700656649 /* AppDelegate.swift */,
 				24045CAC1DD566B700656649 /* ViewController.swift */,
+				24AAE0891DD5749D00F167C2 /* TestTabViewController.swift */,
+				24AAE0991DD6D7AE00F167C2 /* Tab1ViewController.swift */,
+				24EA08791DDAAF260055CE53 /* Tab2ViewController.swift */,
+				24EA087B1DDAAF340055CE53 /* Tab3ViewController.swift */,
+				24AAE09B1DD6DA0000F167C2 /* TestTableViewController.swift */,
 				24045CAE1DD566B700656649 /* Main.storyboard */,
 				24045CB11DD566B700656649 /* Assets.xcassets */,
 				24045CB31DD566B700656649 /* LaunchScreen.storyboard */,
 				24045CB61DD566B700656649 /* Info.plist */,
+				24EA087D1DDAB5E10055CE53 /* rainbow.jpg */,
+				24EA08731DD964FE0055CE53 /* janken.jpg */,
+				24AAE0971DD614FA00F167C2 /* PageViewController.swift */,
+				24AAE0911DD613F300F167C2 /* Page1ViewController.swift */,
+				24AAE0931DD6140400F167C2 /* Page2ViewController.swift */,
+				24AAE0951DD6142200F167C2 /* Page3ViewController.swift */,
 			);
 			path = sampleSplitView;
 			sourceTree = "<group>";
@@ -232,9 +265,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24EA08741DD964FE0055CE53 /* janken.jpg in Resources */,
 				24045CB51DD566B700656649 /* LaunchScreen.storyboard in Resources */,
 				24045CB21DD566B700656649 /* Assets.xcassets in Resources */,
 				24045CB01DD566B700656649 /* Main.storyboard in Resources */,
+				24EA087E1DDAB5E10055CE53 /* rainbow.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +294,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24AAE0941DD6140400F167C2 /* Page2ViewController.swift in Sources */,
+				24AAE0981DD614FA00F167C2 /* PageViewController.swift in Sources */,
+				24AAE09A1DD6D7AE00F167C2 /* Tab1ViewController.swift in Sources */,
+				24EA087A1DDAAF260055CE53 /* Tab2ViewController.swift in Sources */,
+				24AAE0961DD6142200F167C2 /* Page3ViewController.swift in Sources */,
+				24AAE08A1DD5749D00F167C2 /* TestTabViewController.swift in Sources */,
+				24AAE09C1DD6DA0000F167C2 /* TestTableViewController.swift in Sources */,
+				24AAE0921DD613F300F167C2 /* Page1ViewController.swift in Sources */,
 				24045CAD1DD566B700656649 /* ViewController.swift in Sources */,
+				24EA087C1DDAAF340055CE53 /* Tab3ViewController.swift in Sources */,
 				24045CAB1DD566B700656649 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,6 +549,7 @@
 				24045CD11DD566B700656649 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		24045CD21DD566B700656649 /* Build configuration list for PBXNativeTarget "sampleSplitViewTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +558,7 @@
 				24045CD41DD566B700656649 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		24045CD51DD566B700656649 /* Build configuration list for PBXNativeTarget "sampleSplitViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +567,7 @@
 				24045CD71DD566B700656649 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="sampleSplitView" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +17,270 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JUQ-te-S9q">
+                                <frame key="frameInset" minX="164" minY="318" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="1Yn-3s-Zpt" kind="show" id="NAT-NM-lEe"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="39t-1D-q5x"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-309.60000000000002" y="-120.08995502248877"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Vn3-gT-jds">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cgd-pz-UZC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="none" id="GNq-Dn-RLG" customClass="PageViewController" customModule="sampleSplitView" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="j5t-Uh-I5M"/>
+                </pageViewController>
+            </objects>
+            <point key="canvasLocation" x="-1561" y="1290"/>
+        </scene>
+        <!--Page1ViewController-->
+        <scene sceneID="Ifc-jp-a5K">
+            <objects>
+                <viewController storyboardIdentifier="Page1ViewController" title="Page1ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="c7g-5G-pHB" customClass="Page1ViewController" customModule="sampleSplitView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IY1-Um-HAp"/>
+                        <viewControllerLayoutGuide type="bottom" id="kXZ-0P-jeK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fvk-RI-Z1d">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cTf-SY-CSI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-852" y="1290"/>
+        </scene>
+        <!--Page2ViewController-->
+        <scene sceneID="ek8-Ny-czc">
+            <objects>
+                <viewController storyboardIdentifier="Page2ViewController" title="Page2ViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PJt-KW-j68" customClass="Page2ViewController" customModule="sampleSplitView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3H5-5S-KyO"/>
+                        <viewControllerLayoutGuide type="bottom" id="pJS-Ni-Krs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EcH-sE-j1b">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="07F-gq-Cyx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-159" y="1290"/>
+        </scene>
+        <!--Page3 View Controller-->
+        <scene sceneID="STc-bF-ftB">
+            <objects>
+                <viewController storyboardIdentifier="Page3ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="IWt-O5-u5B" customClass="Page3ViewController" customModule="sampleSplitView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kUb-o4-d0g"/>
+                        <viewControllerLayoutGuide type="bottom" id="COC-Tw-TDz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OxG-JN-laW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rjm-s5-19D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="542" y="1290"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="SL0-PI-QF9">
+            <objects>
+                <viewController id="IQf-04-Tjn" customClass="Tab3ViewController" customModule="sampleSplitView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="e77-6R-Lfm"/>
+                        <viewControllerLayoutGuide type="bottom" id="spU-OT-OsG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HcY-yg-CMt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1DW-Gz-A6p">
+                                <frame key="frameInset" minX="164" minY="283" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="GNq-Dn-RLG" kind="show" id="plZ-t9-QGx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="yPL-pE-ihS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lah-mI-tJk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1365" y="1604"/>
+        </scene>
+        <!--Tab1 View Controller-->
+        <scene sceneID="Xp5-Th-54J">
+            <objects>
+                <viewController id="1SC-PZ-GOz" customClass="Tab1ViewController" customModule="sampleSplitView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oF8-K3-Q5e"/>
+                        <viewControllerLayoutGuide type="bottom" id="0xc-8d-O9N"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleAspectFit" id="C7Q-q9-PfF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3ng-x7-9Wp">
+                                <frame key="frameInset" minX="67" minY="85" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="KLv-w1-oCo"/>
+                    <connections>
+                        <outlet property="testImageView" destination="3ng-x7-9Wp" id="D0m-l7-7nr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ueb-ax-xCa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3250.4000000000001" y="261.31934032983509"/>
+        </scene>
+        <!--Tab2 View Controller-->
+        <scene sceneID="qel-2x-RIB">
+            <objects>
+                <viewController id="dwG-r4-qAc" customClass="Tab2ViewController" customModule="sampleSplitView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YBF-eS-a84"/>
+                        <viewControllerLayoutGuide type="bottom" id="DZB-Ti-M4L"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eZH-Sx-HO6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="Kx4-k0-Vdl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TBi-9G-nHD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1364" y="904"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="lqx-Sf-93h">
+            <objects>
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="49h-LW-xle" customClass="TestTableViewController" customModule="sampleSplitView" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ryQ-Da-2xE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TestCell" id="G6l-Zi-KJL">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="G6l-Zi-KJL" id="Tqn-Vf-yfz">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="a8U-zY-NEb" kind="showDetail" id="j4N-sO-4Yr"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="49h-LW-xle" id="T6c-Fk-A0A"/>
+                            <outlet property="delegate" destination="49h-LW-xle" id="WaW-X3-NXL"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="zLa-ZN-qpH"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ye2-Je-bro" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2322.4000000000001" y="-447.52623688155927"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Nkx-Ef-oeq">
+            <objects>
+                <navigationController id="Dgm-gx-ud7" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sZo-Yx-lZG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="49h-LW-xle" kind="relationship" relationship="rootViewController" id="8gY-BX-I48"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PfQ-Uu-tEr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1372" y="-447.52623688155927"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="wRu-Ve-Ytg">
+            <objects>
+                <splitViewController id="1Yn-3s-Zpt" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="Dgm-gx-ud7" kind="relationship" relationship="masterViewController" id="KsD-R5-2M1"/>
+                        <segue destination="a8U-zY-NEb" kind="relationship" relationship="detailViewController" id="JQK-YQ-IYo"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A1b-Lm-FKW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="418.39999999999998" y="-120.08995502248877"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wW0-cN-nLT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ERU-8F-sze" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" selectedImage="janken.jpg" systemItem="topRated" id="ae7-LO-C5e"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Bms-b4-igk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1SC-PZ-GOz" kind="relationship" relationship="rootViewController" id="Ji3-TQ-Qfb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b7L-fc-ZAM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2311.1999999999998" y="261.31934032983509"/>
+        </scene>
+        <!--Test Tab View Controller-->
+        <scene sceneID="56r-rb-zB0">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="a8U-zY-NEb" customClass="TestTabViewController" customModule="sampleSplitView" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="yux-pw-ijm">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ERU-8F-sze" kind="relationship" relationship="viewControllers" id="g9M-SU-0Ho"/>
+                        <segue destination="dwG-r4-qAc" kind="relationship" relationship="viewControllers" id="lrb-Ar-6Wc"/>
+                        <segue destination="IQf-04-Tjn" kind="relationship" relationship="viewControllers" id="g7l-Cq-Ts6"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oFi-Cl-XPo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1372" y="261.31934032983509"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="janken.jpg" width="450" height="440"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="j4N-sO-4Yr"/>
+    </inferredMetricsTieBreakers>
+    <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>
