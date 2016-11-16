@@ -14,6 +14,7 @@
 		24045CB51DD566B700656649 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24045CB31DD566B700656649 /* LaunchScreen.storyboard */; };
 		24045CC01DD566B700656649 /* sampleSplitViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24045CBF1DD566B700656649 /* sampleSplitViewTests.swift */; };
 		24045CCB1DD566B700656649 /* sampleSplitViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24045CCA1DD566B700656649 /* sampleSplitViewUITests.swift */; };
+		242D60BF1DDB764900E1F2A7 /* cocktail.json in Resources */ = {isa = PBXBuildFile; fileRef = 242D60BE1DDB764900E1F2A7 /* cocktail.json */; };
 		24AAE08A1DD5749D00F167C2 /* TestTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AAE0891DD5749D00F167C2 /* TestTabViewController.swift */; };
 		24AAE0921DD613F300F167C2 /* Page1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AAE0911DD613F300F167C2 /* Page1ViewController.swift */; };
 		24AAE0941DD6140400F167C2 /* Page2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AAE0931DD6140400F167C2 /* Page2ViewController.swift */; };
@@ -58,6 +59,7 @@
 		24045CC61DD566B700656649 /* sampleSplitViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sampleSplitViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		24045CCA1DD566B700656649 /* sampleSplitViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sampleSplitViewUITests.swift; sourceTree = "<group>"; };
 		24045CCC1DD566B700656649 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		242D60BE1DDB764900E1F2A7 /* cocktail.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cocktail.json; sourceTree = "<group>"; };
 		24AAE0891DD5749D00F167C2 /* TestTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestTabViewController.swift; sourceTree = "<group>"; };
 		24AAE0911DD613F300F167C2 /* Page1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page1ViewController.swift; sourceTree = "<group>"; };
 		24AAE0931DD6140400F167C2 /* Page2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page2ViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				24AAE0911DD613F300F167C2 /* Page1ViewController.swift */,
 				24AAE0931DD6140400F167C2 /* Page2ViewController.swift */,
 				24AAE0951DD6142200F167C2 /* Page3ViewController.swift */,
+				242D60BE1DDB764900E1F2A7 /* cocktail.json */,
 			);
 			path = sampleSplitView;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				24045CB21DD566B700656649 /* Assets.xcassets in Resources */,
 				24045CB01DD566B700656649 /* Main.storyboard in Resources */,
 				24EA087E1DDAB5E10055CE53 /* rainbow.jpg in Resources */,
+				242D60BF1DDB764900E1F2A7 /* cocktail.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
